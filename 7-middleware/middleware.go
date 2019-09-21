@@ -16,6 +16,11 @@ func handle(rw http.ResponseWriter, r *http.Request) {
 	fmt.Fprintln(rw, "Hello, DDD East Anglia")
 }
 
+// Functions are, as mentioned in earlier examples, first class citizens in Go.
+// This means that functions can be passed as values and returned as values. Allowing
+// us to create middleware functions that can wrap a HTTP `HandlerFunc`. In this case
+// we're adding a unique `request-id` to the HTTP headers of the incoming request,
+// then passing the modified request into the handler function.
 func addReqID(h http.HandlerFunc) http.HandlerFunc {
 	return func(rw http.ResponseWriter, r *http.Request) {
 		out, err := exec.Command("uuidgen").Output()
