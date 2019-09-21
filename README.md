@@ -14,6 +14,7 @@ To build and run an example:
 
 If you have any questions, or would like to enquire about Go training for yourself or your business please get in touch:
 
-Email: [github@mickey.dev](mailto:github@mickey.dev)
-Twitter: [@jmickey_](https://twitter.com/jmickey_)
-LinkedIn: [jmichielsen](https://linkedin.com/in/jmichielsen)
+Email: [github@mickey.dev](mailto:github@mickey.dev)  
+Twitter: [@jmickey_](https://twitter.com/jmickey_)  
+LinkedIn: [jmichielsen](https://linkedin.com/in/jmichielsen)  
+Web: [mickey.dev](https://mickey.dev)
