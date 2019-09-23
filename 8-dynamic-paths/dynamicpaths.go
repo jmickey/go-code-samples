@@ -13,7 +13,7 @@ func handler(rw http.ResponseWriter, r *http.Request) {
 	// Retreive the name from the path. This method of enabling dynamic paths is
 	// pretty unreliable and prone to errors (e.g. what if the caller adds additional
 	// paths? Then we'll end up with a pretty ugly response.)
-	name := r.URL.Path[len("/view/"):]
+	name := r.URL.Path[len("/hello/"):]
 	fmt.Fprintf(rw, "Hello, %s", name)
 }
 

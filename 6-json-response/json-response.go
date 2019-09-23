@@ -35,6 +35,7 @@ func pizzaHandler(rw http.ResponseWriter, r *http.Request) {
 	}
 
 	if r.Method == "GET" {
+		// If no pizza was previously POST'd then return a margherita
 		if pizza == nil {
 			pizza = &Pizza{
 				Base:  "Thin",
